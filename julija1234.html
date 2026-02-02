@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine 💘</title>
+
+  <style>
+    /* Celotno telo centrirano + responsive */
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffe6eb;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* Slika ali GIF */
+    #valentine-img {
+      width: 250px; /* lahko spremeniš */
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 10px 20px;
+      font-size: 24px;
+    }
+
+    /* Gumbi */
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 12px;
+      transition: 0.2s;
+    }
+
+    #yes {
+      background-color: #ff6f91;
+      color: white;
+    }
+
+    #no {
+      position: absolute;
+      background-color: #ccc;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmlnM3BndTJyNGJkMWFtODJ1eG5wZnZndWx2Zm8xOHdxM3p0dGpodSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zl7u48zLVFgLpRwq6f/giphy.gif">
+
+
+  <h1>Za valentinovo romantičen čaj? 🌹</h1>
+
+  <button id="yes" onclick="yes()">Ja 💖</button>
+ 
+  <script>
+    // Kaj se zgodi, če klikne "Yes"
+    function yes() {
+      document.body.innerHTML = `
+        <h1>YAAAY ❤️🌹</h1>
+        <p>Zdaj si uradno moja valentinka 😘</p>
+      `;
+    }
+
+     </script>
+
+</body>
+</html>
